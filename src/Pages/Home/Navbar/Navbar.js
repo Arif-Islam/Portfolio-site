@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { XIcon, MenuIcon } from '@heroicons/react/solid';
 import './Navbar.css';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
@@ -26,17 +27,17 @@ const Navbar = () => {
                             <div className=''>
                                 <NavLink to='/'>Home</NavLink>
                             </div>
+                            {/* <div className=''>
+                                <NavLink to='/about'>About</NavLink>
+                            </div> */}
                             <div className=''>
-                                <NavLink to='/blogs'>About</NavLink>
+                                <HashLink to='/#projects' smooth>Projects</HashLink>
                             </div>
-                            <div className=''>
-                                <NavLink to='/myportfolio'>Projects</NavLink>
-                            </div>
-                            <div className=''>
+                            {/* <div className=''>
                                 <NavLink to='/myportfolio'>Blogs</NavLink>
-                            </div>
+                            </div> */}
                             <div className=''>
-                                <NavLink to='/myportfolio'>Contact</NavLink>
+                                <HashLink to='/#contact' smooth>Contact</HashLink>
                             </div>
                         </div>
                     </div>
@@ -68,17 +69,17 @@ const Navbar = () => {
                     <div className='mt-6 md:mt-0 '>
                         <NavLink to='/'>Home</NavLink>
                     </div>
-                    <div className=''>
+                    {/* <div className=''>
                         <NavLink to='/about'>About</NavLink>
-                    </div>
+                    </div> */}
                     <div className=''>
-                        <NavLink to='/projects'>Projects</NavLink>
+                        <HashLink to='/#projects' smooth>Projects</HashLink>
                     </div>
-                    <div className=''>
+                    {/* <div className=''>
                         <NavLink to='/blogs'>Blogs</NavLink>
-                    </div>
+                    </div> */}
                     <div className=''>
-                        <NavLink to='/contact'>Contact</NavLink>
+                        <HashLink to='/#contact' smooth>Contact</HashLink>
                     </div>
                 </div>
 

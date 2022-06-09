@@ -10,8 +10,8 @@ const Projects = () => {
     }, []);
 
     return (
-        <div>
-            <p className='text-2xl text-center text-white pt-10 pb-16'>My Projects</p>
+        <div id='projects'>
+            <p className='text-2xl text-center text-white pt-10 pb-16 tracking-wider'>My Projects</p>
             <div className='w-11/12 2xl:w-full mx-auto'>
                 <div className='flex items-center justify-center gap-20 pb-10 2xl:pb-20 flex-wrap'>
                     {
