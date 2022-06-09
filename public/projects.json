@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Auto Parts",
+        "description": "A manufacturer auto parts website with Express JS backend, firebase authentication, a dashboard.",
+        "image": "images/Auto Parts (1).png"
+    },
+    {
+        "id": 2,
+        "name": "Sports Gear",
+        "description": "A website for sports gear warehouse that has firebase authentication. Users can add or delete products.",
+        "image": "images/Sports Gear (1).png"
+    },
+    {
+        "id": 3,
+        "name": "Sylhet Safari",
+        "description": "A website for an individual who serves as a tour guide. The site looks nice and it has an authentication system.",
+        "image": "images/Sylhet Safari (1).png"
+    }
+]

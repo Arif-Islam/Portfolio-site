@@ -3,7 +3,10 @@ import img from '../../../images/myself.jpg';
 import img2 from '../../../images/myself 2.jpg';
 import bg from '../../../images/shape-6.png';
 import './Intro.css';
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter';
+import axios from 'axios';
+import fileDownload from 'js-file-download';
+import { Link } from 'react-router-dom';
 
 
 const Intro = () => {
@@ -30,16 +33,14 @@ const Intro = () => {
                             />
                         </p>
                     </div>
-                    <p className='text-white pt-4 tracking-wider pb-8'>A Computer Engineer who fell in love in Web Developing</p>
-                    <a href="https://drive.google.com/file/d/1CuAVS-OnM_OEcHhnvFFq4ZIj-uaMUWUO/view?usp=sharing">
+                    <p className='text-white pt-4 tracking-wider pb-8'>A Computer Engineer who fell in love in Web Developing.</p>
+                    <Link to="files/Md_Ariful_Islam_MERN_Stack_Dev_Resume.pdf" target="_blank" download>
                         <button className='text-white px-6 py-3 bg-purple-700 font-medium tracking-wide shadow-xl rounded-[1px] transition transform duration-500 ease-in-out hover:-translate-y-[6px] hover:shadow-xl hover:bg-black '>Download Resume</button>
-                    </a>
+                    </Link>
+
                 </div>
-                <div className='flex' style={{
-                    backgroundImage: `url(${bg})`, backgroundPosition: 'center', backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}>
-                    <img className='w-[400px] transform duration-500 hover:-translate-y-2 rounded shadow-xl cursor-pointer ' src={img2} alt="" />
+                <div className='flex'>
+                    <img className='w-[400px] transform duration-500 hover:-translate-y-2 rounded-1/2 shadow-xl ' src={img2} alt="" />
                 </div>
             </div>
         </div>
