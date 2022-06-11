@@ -1,7 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blogs from './Pages/Blogs/Blogs';
 import Footer from './Pages/Home/Footer/Footer';
 import Home from './Pages/Home/Home';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Home></Home>}></Route>
             <Route path='/home' element={<Home></Home>}></Route>
+            <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+            <Route path='*' element={<NotFound></NotFound>}></Route>
           </Routes>
         </div>
       </div>

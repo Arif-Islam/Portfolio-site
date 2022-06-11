@@ -13,7 +13,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='  top-0 z-20 py-2 text-white'>
+        <div className='z-20 py-2 text-white'>
             <div className='hidden lg:block lg:w-11/12 mx-auto 2xl:w-full'>
                 <div className='flex items-center justify-between'>
                     <div className=''>
@@ -27,15 +27,15 @@ const Navbar = () => {
                             <div className=''>
                                 <NavLink to='/'>Home</NavLink>
                             </div>
-                            {/* <div className=''>
-                                <NavLink to='/about'>About</NavLink>
-                            </div> */}
+                            <div className=''>
+                                <HashLink to='/#about' smooth>About</HashLink>
+                            </div>
+                            <div className=''>
+                                <NavLink to='/blogs'>Blogs</NavLink>
+                            </div>
                             <div className=''>
                                 <HashLink to='/#projects' smooth>Projects</HashLink>
                             </div>
-                            {/* <div className=''>
-                                <NavLink to='/myportfolio'>Blogs</NavLink>
-                            </div> */}
                             <div className=''>
                                 <HashLink to='/#contact' smooth>Contact</HashLink>
                             </div>
@@ -44,6 +44,7 @@ const Navbar = () => {
 
 
                 </div>
+
             </div>
 
             <div className='lg:hidden'>
@@ -65,19 +66,19 @@ const Navbar = () => {
                         }
                     </div>
                 </div>
-                <div className={(showNav ? "top-[67px] bg-[#212121] " : "-top-full ") + "text-white fixed h-[200px] rounded w-full space-y-3 items-center transition-top duration-500 ease-in-out  text-center uppercase font-semibold tracking-wider text-sm"}>
+                <div className={(showNav ? "sticky top-[67px] bg-[#212121] " : "-top-full ") + "text-white fixed h-[200px] rounded w-full space-y-3 items-center transition-top duration-500 ease-in-out  text-center uppercase font-semibold tracking-wider text-sm"}>
                     <div className='mt-6 md:mt-0 '>
                         <NavLink to='/'>Home</NavLink>
                     </div>
-                    {/* <div className=''>
-                        <NavLink to='/about'>About</NavLink>
-                    </div> */}
+                    <div className=''>
+                        <HashLink to='/#about' smooth>About</HashLink>
+                    </div>
+                    <div className=''>
+                        <NavLink to='/blogs'>Blogs</NavLink>
+                    </div>
                     <div className=''>
                         <HashLink to='/#projects' smooth>Projects</HashLink>
                     </div>
-                    {/* <div className=''>
-                        <NavLink to='/blogs'>Blogs</NavLink>
-                    </div> */}
                     <div className=''>
                         <HashLink to='/#contact' smooth>Contact</HashLink>
                     </div>

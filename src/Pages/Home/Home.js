@@ -1,4 +1,5 @@
 import React from 'react';
+import About from './About/About';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Intro from './Intro/Intro';
@@ -10,6 +11,7 @@ const Home = () => {
         <div>
             <Navbar></Navbar>
             <Intro></Intro>
+            <About></About>
             <Projects></Projects>
             <Contact></Contact>
             {/* <Footer></Footer> */}

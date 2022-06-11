@@ -3,18 +3,38 @@
         "id": 1,
         "name": "Auto Parts",
         "description": "A manufacturer auto parts website with Express JS backend, firebase authentication, a dashboard.",
-        "image": "images/Auto Parts (1).png"
+        "image": "images/Auto Parts (1).png",
+        "img1": "assests/Auto Parts ss 1.png",
+        "img2": "assests/Auto Parts (5).png",
+        "img3": "assests/Auto Parts (2).png",
+        "subtitle": "A manufacturer auto parts website with Express JS backend and Firebase authentication. Developed a payment system using stripe for users to pay for their orders. Implemented different dashboard features for admin and non-admin users.",
+        "livesite": "https://auto-parts-a1c73.web.app/",
+        "clientside": "https://github.com/Arif-Islam/auto-parts-client-side",
+        "serverside": "https://github.com/Arif-Islam/auto-parts-server-side"
     },
     {
         "id": 2,
         "name": "Sports Gear",
         "description": "A website for sports gear warehouse that has firebase authentication. Users can add or delete products.",
-        "image": "images/Sports Gear (1).png"
+        "image": "images/Sports Gear (1).png",
+        "img1": "assests/Sports Gear (2).png",
+        "img2": "assests/Sports Gear ss 2.png",
+        "img3": "assests/Sports Gear ss 3.png",
+        "subtitle": "A website for a warehouse that has different sports gear in their inventory. Implemented an authentication system using Firebase. Users can add or remove products.",
+        "livesite": "https://sports-gear-6d1f5.web.app/",
+        "clientside": "https://github.com/Arif-Islam/sports-gear-client-side",
+        "serverside": "https://github.com/Arif-Islam/sports-gear-server-side"
     },
     {
         "id": 3,
         "name": "Sylhet Safari",
         "description": "A website for an individual who serves as a tour guide. The site has authentication system and looks nice.",
-        "image": "images/Sylhet Safari (1).png"
+        "image": "images/Sylhet Safari (1).png",
+        "img1": "assests/Sylhet Safari ss 3.png",
+        "img2": "assests/Sylhet Safari ss 1.png",
+        "img3": "assests/Sylhet Safari ss 2.png",
+        "subtitle": "A website for an individual who serves as a tour guide. Implemented an authentication system using Firebase before booking a tour guide. Service cards are a bit unique and the whole site looks beautiful.",
+        "livesite": "https://sylhet-safari.web.app/",
+        "clientside": "https://github.com/Arif-Islam/sylhet-safari"
     }
 ]
