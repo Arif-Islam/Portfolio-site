@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import useProjects from "../../../hooks/useProjects";
+import useProjects from "../hooks/useProjects";
 import ProjectCard from "./ProjectCard";
-import "./Projects.css";
-import auto_parts from "../../../images/Auto Parts optimized.png";
-import sports_gear from "../../../images/Sports Gear optimized.png";
-import sylhet_safari from "../../../images/Sylhet Safari optimized.png";
+import "../styles/Projects.css";
+import auto_parts from "../images/Auto Parts optimized.png";
+import sports_gear from "../images/Sports Gear optimized.png";
+import sylhet_safari from "../images/Sylhet Safari optimized.png";
 import { BiLinkExternal } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 

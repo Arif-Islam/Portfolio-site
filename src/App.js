@@ -1,11 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Blogs from "./Pages/Blogs/Blogs";
-import Footer from "./Pages/Home/Footer/Footer";
-import Home from "./Pages/Home/Home";
+import Footer from "./components/Footer";
+import Home from "./Pages/Home";
 import NotFound from "./Pages/NotFound";
-import ProjectInfo from "./Pages/ProjectInfo/ProjectInfo";
-import Header from "./Pages/Home/Navbar/Header";
+import ProjectInfo from "./Pages/ProjectInfo";
+import Header from "./components/Header";
 import { useEffect } from "react";
 import ScrollToTop from "./hooks/ScrollToTop";
 

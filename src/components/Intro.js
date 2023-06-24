@@ -1,11 +1,8 @@
 import React from "react";
-// import myself from "../../../images/me_in_long_hair-removebg-preview.png";
-import "./Intro.css";
+import "../styles/Intro.css";
 import { Typewriter } from "react-simple-typewriter";
-// import axios from "axios";
-// import fileDownload from "js-file-download";
 import { Link } from "react-router-dom";
-import handWave from "../../../images/hand wave.png";
+import handWave from "../images/hand wave.png";
 import { FaDownload } from "react-icons/fa";
 
 const Intro = () => {

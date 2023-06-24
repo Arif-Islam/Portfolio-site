@@ -16,10 +16,10 @@
 import React from "react";
 // import ReactTooltip from "react-tooltip";
 // import { useNavigate } from "react-router-dom";
-import laptop from "../../../images/laptop.png";
-import workingEmoji from "../../../images/working-emoji.png";
-import textLogo from "../../../images/full_-_stack_-_web_-_developer_cropped-removebg-preview.png";
-import "./About.css";
+import laptop from "../images/laptop.png";
+import workingEmoji from "../images/working-emoji.png";
+import textLogo from "../images/full_-_stack_-_web_-_developer_cropped-removebg-preview.png";
+import "../styles/About.css";
 
 const About = () => {
   //   const navigate = useNavigate();
@@ -39,12 +39,12 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-white text-black w-11/12 lg:w-[950px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center gap-24 lg:gap-20 py-32"
+      className="bg-white text-black w-11/12 lg:w-[950px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center gap-16 lg:gap-20 pt-24 pb-32"
     >
       {/* about image  */}
       <div className="flex items-center justify-center lg:w-1/2 relative">
         <img
-          className="rounded-2xl w-[300px] h-[220px] lg:w-[420px] lg:h-[320px]"
+          className="rounded-2xl w-[300px] h-[220px] sm:w-[375px] sm:h-[260px] lg:w-[420px] lg:h-[320px]"
           src={laptop}
           alt=""
         />
@@ -67,7 +67,7 @@ const About = () => {
         <p className="font-semibold text-2xl mb-4 text-gray-800 max-w-[400px]">
           A dedicated Full Stack Developer based in Sylhet, Bangladesh📍
         </p>
-        <p className="text-gray-700 w-11/12 sm:w-[500px] lg:w-auto xl:w-[500px]">
+        <p className="text-gray-700 w-11/12 sm:w-[500px] md:w-[600px] lg:w-auto xl:w-[500px]">
           As a Full Stack Developer, I possess an impressive arsenal of skills
           in HTML, CSS, JavaScript, React, Tailwind, NodeJs and MongoDB. I excel
           in developing websites that offer a smooth user experience. My
