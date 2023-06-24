@@ -1,0 +1,31 @@
+.image-container {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 2s;
+  transition-delay: 0.3s;
+}
+
+.hovered1 img {
+  transform: translateY(-70%);
+}
+.hovered2 img {
+  transform: translateY(-60%);
+}
+.hovered3 img {
+  transform: translateY(-55%);
+}
+
+@media only screen and (max-width: 768px) {
+  .image-container {
+    width: auto;
+    height: 250px;
+  }
+}

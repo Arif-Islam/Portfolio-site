@@ -1,28 +1,48 @@
-import React from 'react';
-import { BsFacebook } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
-import { BsTwitter } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
+import React from "react";
+import { BsFacebook, BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-    return (
-        <div className=' bg-[#2b2b2b]'>
-            <div className='w-11/12 2xl:max-w-7xl mx-auto'>
-                <div className='flex items-center justify-between py-4'>
-                    <div className='flex flex-col justify-center items-end hover:cursor-pointer'>
-                        <p className='text-2xl font-semibold tracking-widest text-white'>Arif</p>
-                        <p className='text-sm text-purple-600 font-medium'><span className='text-purple-500 font-bold'>...</span>Web Developer</p>
-                    </div>
-                    <div className='flex space-x-8'>
-                        <BsFacebook className='w-5 h-5 text-stone-100 transition ease-linear hover:cursor-pointer hover:text-purple-500'></BsFacebook>
-                        <BsInstagram className='w-5 h-5 text-stone-100 transition ease-linear hover:cursor-pointer hover:text-purple-500'></BsInstagram>
-                        <BsTwitter className='w-5 h-5 text-stone-100 transition ease-linear hover:cursor-pointer hover:text-purple-500'></BsTwitter>
-                        <BsLinkedin className='w-5 h-5 text-stone-100 transition ease-linear hover:cursor-pointer hover:text-purple-500'></BsLinkedin>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className=" bg-[#2D2E32]">
+      <div className="w-11/12 lg:w-[900px] xl:w-[940px] mx-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-between py-10 space-y-6 sm:space-y-0">
+          <div>
+            <p
+              to="/"
+              className="font-semibold tracking-wide text-white hover:text-white text-center sm:text-left leading-relaxed"
+            >
+              Copyright © 2021. Dev — @Ariful_Islam
+            </p>
+          </div>
+          <div className="flex space-x-5">
+            <a
+              href="https://github.com/Arif-Islam"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub className="w-5 h-5 text-stone-100 transition ease-linear hover:cursor-pointer hover:scale-125"></BsGithub>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mdarifulislam1998/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin className="w-5 h-5 text-stone-100 transition ease-linear hover:cursor-pointer hover:scale-125"></BsLinkedin>
+            </a>
+            <a
+              href="https://www.facebook.com/AR1F.01/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsFacebook className="w-5 h-5 text-stone-100 transition ease-linear hover:cursor-pointer hover:scale-125"></BsFacebook>
+            </a>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Footer;

@@ -1,0 +1,19 @@
+.bg-Img {
+  background-image: url(../../../images/laptop.png) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rotate-img {
+  animation: rotate 9s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+}

@@ -1,93 +1,114 @@
-import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { XIcon, MenuIcon } from '@heroicons/react/solid';
-import './Navbar.css';
-import { HashLink } from 'react-router-hash-link';
+import React, { useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { XIcon } from "@heroicons/react/solid";
+import "./Header.css";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
-    const [showNav, setShowNav] = useState(false);
-    const navigate = useNavigate();
+  const [showNav, setShowNav] = useState(false);
 
-    const goToHome = () => {
-        navigate('/');
-    }
+  const navRef = useRef();
 
-    return (
-        <div className='z-20 py-2 text-white'>
-            <div className='hidden lg:block lg:w-11/12 mx-auto 2xl:w-full'>
-                <div className='flex items-center justify-between'>
-                    <div className=''>
-                        <div onClick={goToHome} className='flex flex-col justify-center items-end hover:cursor-pointer'>
-                            <p className='text-2xl font-semibold tracking-widest'>Arif</p>
-                            <p className='text-sm text-purple-600 font-medium'><span className='text-purple-500 font-bold'>...</span>Web Developer</p>
-                        </div>
-                    </div>
-                    <div className=''>
-                        <div className='flex space-x-6 justify-center items-center uppercase font-semibold tracking-wider text-sm'>
-                            <div className=''>
-                                <NavLink to='/'>Home</NavLink>
-                            </div>
-                            <div className=''>
-                                <HashLink to='/#about' smooth>About</HashLink>
-                            </div>
-                            <div className=''>
-                                <NavLink to='/blogs'>Blogs</NavLink>
-                            </div>
-                            <div className=''>
-                                <HashLink to='/#projects' smooth>Projects</HashLink>
-                            </div>
-                            <div className=''>
-                                <HashLink to='/#contact' smooth>Contact</HashLink>
-                            </div>
-                        </div>
-                    </div>
+  const showNavbar = () => {
+    navRef.current.classList.toggle("container");
+  };
 
-
-                </div>
-
+  return (
+    <nav className="z-20 py-4 lg:py-6 bg-white navbar shadow-sm fixed top-0 left-0 right-0">
+      <div className="hidden md:block md:w-11/12 mx-auto ">
+        <div className="flex items-center justify-between">
+          <div className="">
+            <Link
+              to="/"
+              className="text-[22px] font-bold tracking-wide hover:text-black"
+            >
+              Arif.dev
+            </Link>
+          </div>
+          <div className="flex space-x-5 justify-center items-center font-semibold tracking-wide text-base">
+            <div className="">
+              <NavLink to="/">Home</NavLink>
             </div>
-
-            <div className='lg:hidden'>
-                <div className='flex justify-between items-center w-11/12 mx-auto'>
-                    <div onClick={goToHome} className='flex flex-col justify-end items-end hover:cursor-pointer'>
-                        <p className='text-2xl font-semibold tracking-widest'>Arif</p>
-                        <p className='text-sm text-purple-600 font-medium'><span className='text-purple-500 font-bold'>...</span>Web Developer</p>
-                    </div>
-                    <div className='flex justify-end items-end'>
-                        {showNav ?
-                            <div onClick={() => setShowNav(!showNav)} className=' w-9 rounded'>
-                                <XIcon className='cursor-pointer w-8 h-8 text-white pl-1'>
-                                </XIcon>
-                            </div>
-                            :
-                            <div onClick={() => setShowNav(!showNav)} className=' w-9 rounded'>
-                                <MenuIcon onClick={() => setShowNav(!showNav)} className='cursor-pointer w-8 h-8 text-white pl-1'></MenuIcon>
-                            </div>
-                        }
-                    </div>
-                </div>
-                <div className={(showNav ? "sticky top-[67px] bg-[#212121] " : "-top-full ") + "text-white fixed h-[200px] rounded w-full space-y-3 items-center transition-top duration-500 ease-in-out  text-center uppercase font-semibold tracking-wider text-sm"}>
-                    <div className='mt-6 md:mt-0 '>
-                        <NavLink to='/'>Home</NavLink>
-                    </div>
-                    <div className=''>
-                        <HashLink to='/#about' smooth>About</HashLink>
-                    </div>
-                    <div className=''>
-                        <NavLink to='/blogs'>Blogs</NavLink>
-                    </div>
-                    <div className=''>
-                        <HashLink to='/#projects' smooth>Projects</HashLink>
-                    </div>
-                    <div className=''>
-                        <HashLink to='/#contact' smooth>Contact</HashLink>
-                    </div>
-                </div>
-
+            <div className="">
+              <HashLink to="/#about" smooth>
+                About
+              </HashLink>
             </div>
-
+            <div className="">
+              <NavLink to="/blogs">Blogs</NavLink>
+            </div>
+            <div className="">
+              <HashLink to="/#projects" smooth>
+                Projects
+              </HashLink>
+            </div>
+            <div className="">
+              <HashLink to="/#contact" smooth>
+                Contact
+              </HashLink>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+      <div className="md:hidden w-11/12 mx-auto">
+        <div className="flex items-center justify-between">
+          <div className="">
+            <Link
+              to="/"
+              className="text-xl font-bold tracking-wide hover:text-black"
+            >
+              Arif.dev
+            </Link>
+          </div>
+          <div>
+            {!showNav ? (
+              <FontAwesomeIcon
+                onClick={() => setShowNav(true)}
+                className="text-xl"
+                icon={faBarsStaggered}
+              />
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
+      </div>
+      {showNav && (
+        <div className="container w-screen h-screen">
+          <div className="flex flex-col space-y-10 justify-center items-center font-medium tracking-wide text-[22px]">
+            <div className="">
+              <NavLink to="/">Home</NavLink>
+            </div>
+            <div className="">
+              <HashLink to="/#about" smooth>
+                About
+              </HashLink>
+            </div>
+            <div className="">
+              <NavLink to="/blogs">Blogs</NavLink>
+            </div>
+            <div className="">
+              <HashLink to="/#projects" smooth>
+                Projects
+              </HashLink>
+            </div>
+            <div className="">
+              <HashLink to="/#contact" smooth>
+                Contact
+              </HashLink>
+            </div>
+          </div>
+          {/* <XIcon
+            onClick={() => setShowNav(false)}
+            className="w-6 text-black fixed top-4 left-[calc(100%-8.33%)] z-50"
+          ></XIcon> */}
+        </div>
+      )}
+    </nav>
+  );
 };
 
 export default Navbar;
