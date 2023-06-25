@@ -13,7 +13,7 @@ const Footer = () => {
               to="/"
               className="font-semibold tracking-wide text-white hover:text-white text-center sm:text-left leading-relaxed"
             >
-              Copyright © 2021. Dev — @Ariful_Islam
+              Copyright © 2022. Dev — @Ariful_Islam
             </p>
           </div>
           <div className="flex space-x-5">

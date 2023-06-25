@@ -46,14 +46,14 @@ const Intro = () => {
             download
           >
             <button className="px-6 py-4 bg-[#333333] text-white font-medium tracking-wide shadow-xl rounded-2xl transition transform duration-500 ease-in-out hover:-translate-y-[6px] hover:shadow-xl hover:bg-black flex items-center">
-              Download Resume{" "}
+              Download Resume
               <p className="ml-2">
                 <FaDownload></FaDownload>
               </p>
             </button>
           </Link>
         </div>
-        <div className="flex items-center justify-center intro-img">
+        <div className="flex items-center justify-center intro-img rounded-full">
           {/* intro image div. */}
         </div>
       </div>

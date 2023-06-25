@@ -158,7 +158,10 @@ const Skills = () => {
   }, [clicked]);
 
   return (
-    <div id="skills" className="bg-white -mt-16 lg:mt-0 mb-24 lg:mb-0 lg:pb-24 ">
+    <div
+      id="skills"
+      className="bg-white -mt-16 lg:mt-0 mb-24 lg:mb-0 lg:pb-24 "
+    >
       <div className="w-11/12 sm:w-3/4 md:w-4/6 lg:w-[950px] mx-auto flex flex-col items-center justify-center ">
         {/* <p className="text-blue-500 text-lg font-bold uppercase mb-8 text-center">
           Skills

@@ -35,6 +35,9 @@ const Projects = () => {
                 onMouseLeave={() => setHovered1(false)}
               >
                 <img
+                  onClick={() => {
+                    window.open("https://auto-parts-a1c73.web.app/", "_blank");
+                  }}
                   className="img1 hover:cursor-pointer"
                   src={auto_parts}
                   alt=""
@@ -51,13 +54,31 @@ const Projects = () => {
                 for users to pay for their orders. Implemented different
                 dashboard features for admin and non-admin users.
               </p>
-              <div className="flex items-center justify-center flex-wrap space-x-5 font-bold text-gray-700 mb-5">
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">React</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">Tailwind</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">Express Js</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">MongoDB</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">JWT</p>
-                {/* <p className="hover:text-gray-400">Firebase</p> */}
+              <div className="flex items-center justify-center flex-wrap gap-2 font-bold text-gray-700 mb-6">
+                <img
+                  src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                  alt="React"
+                />
+                <img
+                  src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                  alt="TailwindCSS"
+                />
+                <img
+                  src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+                  alt="Express.js"
+                />
+                <img
+                  src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+                  alt="MongoDB"
+                />
+                <img
+                  src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens"
+                  alt="JWT"
+                />
+                <img
+                  src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"
+                  alt="Firebase"
+                />
               </div>
               <div className="flex items-center justify-center flex-wrap space-x-6 lg:space-x-8">
                 <a
@@ -98,6 +119,9 @@ const Projects = () => {
                 onMouseLeave={() => setHovered2(false)}
               >
                 <img
+                  onClick={() => {
+                    window.open("https://sports-gear-6d1f5.web.app/", "_blank");
+                  }}
                   className="img2 hover:cursor-pointer"
                   src={sports_gear}
                   alt=""
@@ -113,12 +137,27 @@ const Projects = () => {
                 their inventory. Implemented an authentication system using
                 Firebase. Users can add or remove products.
               </p>
-              <div className="flex items-center justify-center flex-wrap space-x-5 font-bold text-gray-700 mb-5">
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">React</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">Tailwind</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">Express JS</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">MongoDB</p>
-                {/* <p className="hover:text-gray-400">Firebase</p> */}
+              <div className="flex items-center justify-center flex-wrap gap-2 font-bold text-gray-700 mb-6">
+                <img
+                  src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                  alt="React"
+                />
+                <img
+                  src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                  alt="TailwindCSS"
+                />
+                <img
+                  src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+                  alt="Express.js"
+                />
+                <img
+                  src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+                  alt="MongoDB"
+                />
+                <img
+                  src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"
+                  alt="Firebase"
+                />
               </div>
               <div className="flex items-center justify-center flex-wrap space-x-6 lg:space-x-8">
                 <a
@@ -159,6 +198,9 @@ const Projects = () => {
                 onMouseLeave={() => setHovered3(false)}
               >
                 <img
+                  onClick={() => {
+                    window.open("https://sylhet-safari.web.app/", "_blank");
+                  }}
                   className="img3 hover:cursor-pointer"
                   src={sylhet_safari}
                   alt=""
@@ -175,10 +217,19 @@ const Projects = () => {
                 different route. Service cards are a bit unique and the whole
                 site looks beautiful.
               </p>
-              <div className="flex items-center justify-center flex-wrap space-x-5 font-bold text-gray-700 mb-5">
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">React</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">Tailwind</p>
-                <p className="hover:text-gray-400 mb-2 lg:mb-0">Firebase</p>
+              <div className="flex items-center justify-center flex-wrap gap-2 font-bold text-gray-700 mb-6">
+                <img
+                  src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                  alt="React"
+                />
+                <img
+                  src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                  alt="TailwindCSS"
+                />
+                <img
+                  src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"
+                  alt="Firebase"
+                />
               </div>
               <div className="flex items-center justify-center flex-wrap space-x-6 lg:space-x-8">
                 <a
